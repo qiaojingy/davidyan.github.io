@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page-title {
+            text-align: center;
+            color: #2d3748;
+            font-size: 2.5rem;
+            margin: 0.5rem 0 1rem;
+            line-height: 1.2;
+        }
+
+        .content {
+            display: flex;
+            gap: 4rem;
+            padding: 3rem;
+        }
+
+        .photo-section {
+            flex: 1;
+        }
+
+        .info-section {
+            flex: 2;
+            padding-top: 0;
+        }
+
+        .info-section p:first-child {
+            margin-top: 0;
+
+        }
+
+        h2 {
+            color: #2d3748;
+            margin-top: 1.5rem;
+        }
+
+        .photo {
+            width: 100%;
+            aspect-ratio: 0.8;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                gap: 2rem;
+                padding: 1.5rem;
+            }
+
+            .photo-section, .info-section {
+                flex: none;
+            }
+
+            .page-title {
+                font-size: 2rem;
+                margin: 0.25rem 0 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Qiaojing (David) Yan</h1>
+        <div class="content">
+            <div class="photo-section">
+                <img src="images/profile.jpg" alt="David Yan" class="photo">
+            </div>
+            <div class="info-section">
+                <p>I'm a senior research engineer at <a href="https://aws.amazon.com/about-aws">AWS</a>, working on LLM customization and inference optimization.</p>
+                
+                <p>Previously, I worked at <a href="https://waymo.com/about/">Waymo</a> as a senior ML engineer during 2019-2024. My projects focused on using machine learning to do behavior prediction and motion planning.</p>
+                
+                <p>Before that, I worked at Google Search Knowledge Graph team, focusing on natural language understanding.</p>
+                
+                <p>I received my M.S. in Electrical Engineering from Stanford University. Prior to that, I obtained my B.S. in Physics from Peking University.
+
+                <p>During 2016-2017, I was TA for CS224n: Natural Language Processing with Deep Learning.</p>
+                
+                <p style="text-align:center">
+                  <a href="mailto:qiaojingyan9@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/qiaojingyan/">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
